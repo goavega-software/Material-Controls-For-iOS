@@ -687,6 +687,10 @@ namespace MaterialControls
 		[Export("replaceItem:atIndex:")]
 		void ReplaceItem(NSObject item, nuint index);
 
+		//- (void)resetTitle:(id)item atIndex:(NSUInteger)index;
+		[Export("resetTitle:atIndex:")]
+		void ResetTitle(string title, nuint index);
+
 		// -(NSMutableArray *)tabs;
 		[Export("tabs")]
 		NSMutableArray<UIView> Tabs();

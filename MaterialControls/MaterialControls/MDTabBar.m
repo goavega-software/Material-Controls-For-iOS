@@ -556,6 +556,10 @@
   [segmentedControl removeSegmentAtIndex:index animated:animated];
 }
 
+- (void)resetTitle:(id)item atIndex:(NSUInteger)index {
+    [segmentedControl setTitle:item forSegmentAtIndex:index];
+}
+
 - (void)replaceItem:(id)item atIndex:(NSUInteger)index {
   if ([item isKindOfClass:[NSString class]]) {
     [segmentedControl setTitle:item forSegmentAtIndex:index];
