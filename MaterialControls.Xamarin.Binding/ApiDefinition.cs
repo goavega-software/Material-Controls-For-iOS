@@ -689,7 +689,7 @@ namespace MaterialControls
 
 		// -(NSMutableArray *)tabs;
 		[Export("tabs")]
-		NSMutableArray Tabs();
+		NSMutableArray<UIView> Tabs();
 
 		// -(void)moveIndicatorToFrame:(CGRect)frame withAnimated:(BOOL)animated;
 		[Export("moveIndicatorToFrame:withAnimated:")]
@@ -892,6 +892,18 @@ namespace MaterialControls
 		// @property (nonatomic) UIKeyboardType keyboardType;
 		[Export("keyboardType")]
 		UIKeyboardType KeyboardType { get; set; }
+
+		// @property (nonatomic) UITextAutocapitalizationType autocapitalizationType;
+		[Export("autocapitalizationType")]
+		UITextAutocapitalizationType AutocapitalizationType { get; set; }
+
+		// @property (nonatomic) UITextAutocorrectionType autocorrectionType;
+		[Export("autocorrectionType")]
+		UITextAutocorrectionType AutocorrectionType { get; set; }
+
+		// @property (nonatomic) UITextSpellCheckingType spellCheckingType;
+		[Export("spellCheckingType")]
+		UITextSpellCheckingType SpellCheckingType { get; set; }
 
 		// @property (nonatomic) BOOL hasError;
 		[Export("hasError")]
