@@ -59,7 +59,7 @@
   // delegate scrollview
   for (UIView *v in pageController.view.subviews) {
     if ([v isKindOfClass:[UIScrollView class]]) {
-      ((UIScrollView *)v).delegate = self;
+      ((UIScrollView *)v).scrollEnabled = NO;
     }
   }
 
